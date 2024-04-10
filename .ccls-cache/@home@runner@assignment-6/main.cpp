@@ -8,27 +8,31 @@ using namespace std;
 
 // Q2 Write a function that takes the time as three integer arguments(hours, minutes and seconds) and returns the number of seconds since the last time the clock "stuck 12". Use this function to calculate the amount of time in seconds between two times, both of which are within one 12-hour cycle of the clock. Eg: if user enters 3,12,39, the output is 11559.
 
+
 void asterisks(int num) {
-  int count{0};
-  int count2{0};
+    int count{0};
+    int count2{0};
 
-  
-    
-  while (count <= num) {
-    cout << "*";
-    count++;
-  }
-
-
+    // Iterate through rows
+    while (count2 < num) {
+        // Iterate through columns
+        count = 0;
+        while (count < num) {
+            std::cout << "* ";
+            count++;
+        }
+        std::cout << std::endl;
+        count2++;
+    }
 }
 
 int main() {
+    int num{0};
 
-  int num{0};
+    std::cout << "Enter the side length of the square: ";
+    std::cin >> num;
 
-  cout << "input a number: ";
-  cin >> num;
+    asterisks(num);
 
-asterisks(num);
-  
+    return 0;
 }
