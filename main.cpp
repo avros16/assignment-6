@@ -33,7 +33,7 @@ int main() {
   cout << "What time is it? (Enter seconds): ";
   cin >> sec;
 
-grab = time(hours, mins, sec); //calling function, passing in parameters, storing value in grab
+grab = time(hours,mins,sec); //calling function, passing in parameters, storing value in grab
   
   cout << "The total time that has passed since the clock hit 12 is: " << grab << " seconds"; 
   
